@@ -1,98 +1,184 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>前田紗花とは</title>
-    <link rel="stylesheet" href="portfolio.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="header-logo">前田紗花とは</div>
-      <div class="header-list">
-        <ul>
-          <li><a href="#link1">自己紹介</a></li>
-          <li><a href="#link2">SNS</a></li>
-          <li><a href="#link3">お問い合わせ</a></li>
-        </ul>
-      </div>
-    </div>
+body {
+  font-family: "Avenir Next";
+}
 
-    <div class="main">
-      <div class="copy-container">
-        <h1>まえださやか</h1>
-        <h2>前田 紗花</h2>
-      </div>
-      
-      <div class="contents">
-        <h3 class="section-title"><a name="link1">自己紹介</a></h3>
-        <div class="contents-item">
-          <img src="http://www.ritsumei.ac.jp/image.jsp?id=353801">
-          <p>奈良高校を卒業後、立命館大学映像学部に入学し、主にＶＲやモーションキャプチャーの技術、３ＤＣＧを学び、また実写の撮影技術や映像心理学について勉強しています。</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg">
-          <p>「いわしお」というペンネームで３ＤＣＧアニメーション自主製作の活動を行っています。MAYA、AfterEffects、Blender、Zbrushを使って製作しております。</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg">
-          <p>HTML＆CSS、JAVA、C++、Processingを勉強しており、最終的には最新のデバイスを使った老若男女が使いやすく、楽しんでもらえて社会に役に立つヒューマンインターフェースを作りたいです。</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg">
-          <p>犬が大好きです！！トイプードルを家で飼っていますが、どの犬種もどんな子も大歓迎！！</p>
-        </div>
-      </div>
+li {
+  list-style: none;
+}
 
-      <div class="sns">
-        <h4 class="sns-title"><a name="link2">SNS</a></h4>
-        <div class="sns-item">
-            <a href="https://twitter.com/iwasiocg">いわしおのTwitter<img src="https://dohack.jp/wp-content/uploads/2018/07/e87144.jpg"></a>
-          
-        </div>
-        <div class="sns-item">
-            <a href="https://www.instagram.com/mae_saya_93/">前田紗花のInstagram<img src="http://www.sumitomolife.co.jp/top_data_20180717/img/img-logo-insta.png"></a>
-        </div>
+.header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 90px;
+}
 
-        <div class="sns-item">
-          
-          <a href="https://www.facebook.com/profile.php?id=100039024741883">前田紗花のFacebook<img src="http://www.marksign.net/wp-content/uploads/2016/03/512-300x300.jpg"></a>
-        </div>
-        
-        <div class="sns-item">
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
 
-          <a href="https://m.youtube.com/channel/UCEouSrN7XHA7gwdgofJSk3g">いわしおのYouTube<img src="http://www.sumitomolife.co.jp/top_data_20180717/img/img-logo-youtube.png"></a>
-        </div>
-      </div>
-      
-      <div class="contact-form">
-        <h5 class="section-title"><a name="link3">お問い合わせ</a></h5>
-        <p>メールアドレス（必須）</p>
-        <!-- <input>要素を追加してください -->
-        <input id="mail" type="email" name="mail">
- 
-        メール：
-        
-        <p>お問い合わせ内容（必須）</p>
-        <!-- <textarea>要素を追加してください -->
-        <textarea></textarea>
-        
-        
-        <p>※必須項目は必ずご入力ください</p>
-        <!-- <input>要素を追加してください -->
-        <input class="contact-submit" type="submit" value="送信">
-        
-      </div>
-    </div>
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+}
 
-    <div class="footer">
-      <div class="footer-logo">前田紗花</div>
-      <div class="footer-list">
-        <ul>
-          <li><a href="#link1">自己紹介</a></li>
-          <li><a href="#link2">SNS</a></li>
-          <li><a href="#link3">お問い合わせ</a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
-</html>
+.main {
+  padding: 100px 80px;
+}
+
+.copy-container h1 {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%)
+}
+
+.copy-container h2 {
+  font-size: 70px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%)
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
+
+.contents {
+  height: 1800px;
+  margin-top: 200px;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 40px;
+  width: 500px;
+}
+
+.contents-item img{
+  width: 100%; 
+}
+
+.contents-item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+
+
+
+.sns {
+  height:500px;
+  margin-top: 100px;
+}
+
+.sns-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.sns-item {
+  float: left;
+  margin-right: 40px;
+  width: 230px;
+}
+
+.sns-item img{
+  width: 100%; 
+}
+
+.sns-item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+
+.contact-form {
+  padding-top: 10px;
+}
+
+/* inputとtextareaのCSSを指定してください */
+input,textarea{
+  width:400px;
+padding:20px;
+margin-top:10px;
+margin-bottom:30px;
+font-size:18px;
+border:1px solid #dee7ec;
+}
+/* contact-submitのCSSを指定してください */
+
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+
+
+
+#sample {
+  width: 700px;
+  height: 400px;
+}
+.google-map {
+  
+  position: relative;
+  
+  width: 100%;
+  
+  height: 0;
+  
+  overflow: hidden;
+  
+  padding-bottom: 56.25%;
+  
+  }
+  
+    
+  
+  .google-map iframe {
+  
+  position: absolute;
+  
+  width: 100%;
+  
+  height: 100%;
+  
+  top: 0;
+  
+  left: 0;
+  
+  }
+  
